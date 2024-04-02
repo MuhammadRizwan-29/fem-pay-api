@@ -1,11 +1,23 @@
-*{
+/* Variables */
+:root {
+    --red: #ba4270;
+    --red-light: #da6d97;
+    --white: #fbfcfe;
+    --blue-light: #6c8294;
+    --blue: #36536b;
+    --blue-dark: #1b262f;
+}
+
+* {
     margin: 0;
     padding: 0;
 }
-.container{
+
+.container {
     max-width: 1440px;
     margin: 0 auto;
 }
-body{
+
+body {
     font-family: "Public Sans", sans-serif;
 }
