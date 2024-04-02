@@ -21,3 +21,83 @@
 body {
     font-family: "Public Sans", sans-serif;
 }
+/* Typography */
+h1 {
+    font-size: 5.5rem;
+    line-height: 1.1;
+    font-weight: 900;
+    color: var(--blue);
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* ------ HOME ------  */
+/* Hero Section */
+.hero--section {
+    position: relative;
+    overflow-x: hidden;
+}
+.hero--section::before {
+    content: "";
+    position: absolute;
+    right: -10rem;
+    top: -15rem;
+    width: 900px;
+    height: 900px;
+    background-image: url(./../src/img-icon/bg-pattern-circle.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+.hero--container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero--container :where(.left, .right){
+    flex: 1;
+}
+.hero--container .right {
+    text-align: center;
+}
+.hero--section h1 {
+    margin-bottom: 1.5rem;
+}
+/* Book Demo Form */
+.book--demo input {
+    padding: 1rem;
+    width: 60%;
+    border: none;
+    box-shadow: -1px 4px 19px #00000057;
+    border-radius: 50px;
+}
+input[type="email"]::placeholder {
+    font-family: "Public Sans";
+    font-size: 1rem;
+    color: var(--blue);
+    font-weight: 500;
+}
+.book--demo button[type="submit"] {
+    background: var(--red);
+    color: var(--white);
+    padding: 1rem 2rem;
+    line-height: 1;
+    border-radius: 50px;
+    border: none;
+    font-family: "Public Sans";
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: -3.5rem;
+    cursor: pointer;
+}
+.book--demo :where(p, a) {
+    margin-top: 1rem;
+    color: var(--blue);
+    font-family: "Public Sans";
+}
