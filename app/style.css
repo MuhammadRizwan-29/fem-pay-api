@@ -107,11 +107,14 @@ p {
 .brands--box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 2rem;
     padding: 4rem;
 }
 .we--work :where(h2, p) {
     color: var(--white);
+}
+.brands--box a {
+    text-align: center;
 }
 /* Book Demo Form */
 .book--demo input {
