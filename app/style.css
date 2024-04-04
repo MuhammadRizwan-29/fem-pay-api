@@ -155,7 +155,23 @@ input[type="email"]::placeholder {
 
 /* Features */
 .features--sec {
-    padding: 4rem 0;
+    padding: 4rem 0 0 0;
+}
+.ui-ux{
+    position: relative;
+}
+.ui-ux::before {
+    content: "";
+    height: 550px;
+    width: 550px;
+    position: absolute;
+    background-image: url(./../src/img-icon/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    right: 5rem;
+    top: -3rem;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
 }
 .easy-implement {
     display: flex;
@@ -180,4 +196,12 @@ input[type="email"]::placeholder {
     margin-bottom: 1rem;
     font-family: 'Public Sans' !important;
     font-weight: 800;
+    color: var(--blue);
+}
+.ui-ux .easy-implement .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
 }
