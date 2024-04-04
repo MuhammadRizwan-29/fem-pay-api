@@ -152,3 +152,32 @@ input[type="email"]::placeholder {
     font-family: "Public Sans";
 }
 /* end of Book Demo Foem */
+
+/* Features */
+.features--sec {
+    padding: 4rem 0;
+}
+.easy-implement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.easy-implement  :where(.left, .right){
+    flex: 1;
+}
+.easy-implement .left {
+    text-align: center;
+}
+.easy-implement img{
+    width: 100%;
+}
+.features--text {
+    width: 75%;
+}
+.features--text h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+    font-family: 'Public Sans' !important;
+    font-weight: 800;
+}
